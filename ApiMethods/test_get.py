@@ -1,5 +1,4 @@
 import requests
-import json
 
 base_url="https://reqres.in/"
 end_point="api/users?page=2"
