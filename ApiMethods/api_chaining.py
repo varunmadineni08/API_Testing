@@ -22,8 +22,8 @@ def test_api_chaining():
     # Check response is OK before parsing
     assert response.status_code == 200, f"Login failed: {response.status_code}"
 
-    response_json = response.json()
-    token = response_json.get("accessToken")  # Safe access
+    # response_json = response.json()
+    token = response.json().get("accessToken")  # Safe access
     print(token)
 
     url2="https://dummyjson.com/auth/me"
